@@ -1,0 +1,6 @@
+1. 执行start.py获取整个网站的商品信息
+2. 执行前需要开启mongdb数据库
+3. 执行前需要配置my_pipelines.py中的代理池(访问次数比较高,IP容易被封)
+4. 爬取步骤采取先爬取每个商品的url,然后获取每个商品具体信息
+5. 商品的url按照分类以此存放在new_product,shoe_products,等数据库下的goods_urls集合中
+6. 各类的商品按照分类以此存放在new_product_goods,shoe_products_goods,等数据库下的goods_info集合中,可以打开对应集合,进行相关数据的查找与提取
